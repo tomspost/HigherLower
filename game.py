@@ -20,14 +20,16 @@ while count < 6:
         if number1 > number2:
             print "CORRECT"
         else:
-            print "WRONG"
+            print "WRONG... start again"
             count = 1
     else:
         if number1 < number2:
             print "CORRECT"
         else:
-            print "WRONG"
+            print "WRONG...  start again"
             count = 1
     number1 = number2
+    if count == 5:
+        print "one more correct answer to win..."
 
 print("You WIN!!!!")
