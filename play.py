@@ -1,4 +1,5 @@
 print "PLay to higher lower get 5 in a row to win!!"
+print ""
 import random
 count  = 1
 n1 = random.randint(1, 10)
@@ -12,16 +13,17 @@ while count < 6:
     guess = raw_input("guess h/l? ")
     if guess == "h":
         if n2 > n1:
-            print "correct"
+            print "\033[92mcorrect"
         else:
-            print "wrong"
+            print "\033[91mwrong"
             count = 0
     else:
         if n1 > n2:
-            print "correct"
+            print "\033[92mcorrect"
         else:
-            print "wrong"
+            print "\033[91mwrong"
             count = 0
     count = count + 1
     n1 = n2
+    print ""
 print "You win !!!"
