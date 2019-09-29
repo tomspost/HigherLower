@@ -23,4 +23,5 @@ while count < 6:
             print "wrong"
             count = 0
     count = count + 1
+    n1 = n2
 print "You win !!!"
